@@ -1,0 +1,24 @@
+// ==========================================================================
+
+// Website Name - http://sitename.com.au
+// Author: Matthew Blode - https://matthewblode.com/
+
+// ==========================================================================
+
+// Tailwind
+@tailwind preflight;
+@tailwind components;
+
+// Base
+@import "base/global";
+@import "base/typography";
+
+@tailwind utilities;
+
+// Site
+@import "site/pages/*";
+@import "site/includes/*";
+@import "site/home/*";
+
+// Vendor
+// @import "site/vendor/*";

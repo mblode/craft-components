@@ -1,0 +1,45 @@
+{
+  "require": {
+    "barrelstrength/sprout-encode-email": "^2.0",
+    "barrelstrength/sprout-fields": "^3.0",
+    "barrelstrength/sprout-forms": "^3.0.0-beta.9",
+    "barrelstrength/sprout-forms-google-recaptcha": "^1.0",
+    "benjamminf/craft-embedded-assets": "^1.0",
+    "craftcms/cms": "^3.0",
+    "craftcms/mailgun": "^1.0",
+    "craftcms/redactor": "^2.0",
+    "dukt/analytics": "^4.0",
+    "mmikkel/cp-field-inspect": "^1.0",
+    "nystudio107/craft-seomatic": "^3.0",
+    "rias/craft-position-fieldtype": "^1.0",
+    "sebastianlenz/linkfield": "^1.0",
+    "topshelfcraft/wordsmith": "^3.0",
+    "verbb/default-dashboard": "^1.0",
+    "verbb/element-index-defaults": "^1.0",
+    "verbb/expanded-singles": "^1.0",
+    "verbb/field-manager": "^2.0",
+    "verbb/icon-picker": "^1.0",
+    "verbb/image-resizer": "^2.0",
+    "verbb/navigation": "^1.0",
+    "verbb/redactor-tweaks": "^2.0",
+    "verbb/super-table": "^2.0",
+    "vlucas/phpdotenv": "^2.4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "modules\\sitemodule\\": "modules/sitemodule/src/"
+    }
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true,
+    "platform": {
+      "php": "7.0"
+    }
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ]
+  }
+}

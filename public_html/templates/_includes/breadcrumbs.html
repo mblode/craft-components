@@ -1,0 +1,37 @@
+{% import '_macros/utilities' as utils %}
+
+{% set columns = (cols is defined) ? cols : 'col-12' %}
+
+<section class="breadcrumbs-section">
+    <div class="container">
+        <div class="row">
+            <div class="{{ columns }}">
+                {% if craft.app.request.segments %}
+                    <ul class="breadcrumb-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ siteUrl }}">
+                                <span class="nav-link-icon">{% include "_svg/home.svg" %}</span>
+                            </a>
+                        </li>
+
+                        {% block conent %}
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ siteUrl }}">
+                                    <span class="nav-link-text">Home</span>
+                                </a>
+                            </li>
+
+                            {% if entry is defined %}
+                                {% for crumb in entry.ancestors.all %}
+                                    {{ utils.breadcrumb(crumb.title, crumb.url) }}
+                                {% endfor %}
+
+                                {{ utils.breadcrumb(entry.title) }}
+                            {% endif %}
+                        {% endblock %}
+                    </ul>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>

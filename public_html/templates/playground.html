@@ -1,0 +1,108 @@
+{% extends '_layout' %}
+
+{% block content %}
+
+<div class="playground" style="padding: 2rem 0;">
+    <div class="container">
+        <h2 class="text-primary">Headings</h2><hr>
+
+        <h1>h1. Framework heading</h1>
+        <h2>h2. Framework heading</h2>
+        <h3>h3. Framework heading</h3>
+        <h4>h4. Framework heading</h4>
+        <h5>h5. Framework heading</h5>
+        <h6>h6. Framework heading</h6>
+
+<h2 class="text-primary" style="padding-top: 4rem;">Links</h2><hr>
+
+<a href="#">Just a link</a>
+
+<h2 class="text-primary" style="padding-top: 4rem;">Buttons</h2><hr>
+
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-secondary">Secondary</button>
+<button class="btn btn-success">Success</button>
+<button class="btn btn-danger">Danger</button>
+<button class="btn btn-warning">Warning</button>
+
+<h2 class="text-primary" style="padding-top: 4rem;">Forms</h2><hr>
+
+<form>
+    <div class="form-group">
+        <div class="form-row">
+            <div class="col">
+                <label class="form-label" for="input-example-2">First Name</label>
+                <input class="form-input" placeholder="First name" type="text">
+            </div>
+
+            <div class="col">
+                <label class="form-label" for="input-example-2">Last Name</label>
+                <input class="form-input" placeholder="Last name" type="text">
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label" for="input-example-2">Email</label>
+        <input class="form-input" id="input-example-2" placeholder="Email" type="email">
+    </div>
+
+    <div class="form-group">
+        <label class="form-label" for="input-example-2">Subject</label>
+
+        <select class="form-select">
+            <option>Choose an option</option>
+            <option>Slack</option>
+            <option>Skype</option>
+            <option>Hipchat</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label">Gender</label>
+
+        <div class="form-radio">
+            <input checked id="customRadio1" name="gender" type="radio">
+            <label class="form-check-label" for="customRadio1">Male</label>
+        </div>
+
+        <div class="form-radio">
+            <input id="customRadio2" name="gender" type="radio">
+            <label class="form-check-label" for="customRadio2">Female</label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="form-checkbox">
+            <input id="customCheck1" type="checkbox">
+            <label class="form-check-label" for="customCheck1">Remember me</label>
+        </div>
+
+        <div class="form-checkbox">
+            <input checked id="customCheck2" type="checkbox">
+            <label class="form-check-label" for="customCheck2">Remember me</label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="form-switch">
+            <input id="customSwitch1" type="checkbox">
+            <label class="form-check-label" for="customSwitch1">Send me emails with news and tips</label>
+        </div>
+
+        <div class="form-switch">
+            <input checked id="customSwitch2" type="checkbox">
+            <label class="form-check-label" for="customSwitch2">Send me emails with news and tips</label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label" for="input-example-3">Message</label> 
+        <textarea class="form-input" id="input-example-3" placeholder="Textarea" rows="3"></textarea>
+    </div>
+</form>
+
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,39 @@
+{
+    "name": "mblode",
+    "version": "1.0.0",
+    "author": "Matthew Blode <m.blode@gmail.com>",
+    "copyright": "mblode",
+    "main": "index.js",
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.26.3",
+        "browser-sync-webpack-plugin": "^2.2.2",
+        "cross-env": "^5.2.0",
+        "imagemin-webpack-plugin": "^2.4.1",
+        "import-glob-loader": "^1.1.0",
+        "laravel-mix": "^4.0.14",
+        "laravel-mix-purgecss": "^4.1.0",
+        "lazysizes": "^4.1.5",
+        "sass": "^1.17.0",
+        "sass-loader": "7.*",
+        "tailwindcss": "^0.7.4",
+        "vue-template-compiler": "^2.6.3"
+    },
+    "dependencies": {
+        "flickity": "^2.2.0",
+        "flickity-as-nav-for": "^2.0.1",
+        "gsap": "^2.0.2",
+        "popper.js": "^1.14.7",
+        "v-click-outside-x": "^3.7.1",
+        "vee-validate": "^2.1.7",
+        "vue": "^2.6.3"
+    }
+}
