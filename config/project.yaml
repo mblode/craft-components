@@ -1,0 +1,33 @@
+dateModified: 1550354049
+email:
+  fromEmail: m@blode.co
+  fromName: 'Craft Components'
+  transportType: craft\mail\transportadapters\Sendmail
+fieldGroups:
+  5e56da02-4c70-4a86-bd72-cfc5149300c6:
+    name: Common
+siteGroups:
+  d5b4ac2b-8229-4a98-a473-991305bdfbc8:
+    name: 'Craft Components'
+sites:
+  10569d4e-ff4d-4e7c-ae82-e786f5f31055:
+    baseUrl: $DEFAULT_SITE_URL
+    handle: default
+    hasUrls: true
+    language: en-AU
+    name: 'Craft Components'
+    primary: true
+    siteGroup: d5b4ac2b-8229-4a98-a473-991305bdfbc8
+    sortOrder: 1
+system:
+  edition: solo
+  live: true
+  name: Components
+  schemaVersion: 3.1.25
+  timeZone: Australia/Melbourne
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: ''
+  photoVolumeUid: null
+  requireEmailVerification: true
